@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="content-type"/>
+    <title>云麓十七年 - 一起，在麓上</title>
+    <link href="layouts/style.css" rel="stylesheet" type="text/css"/>
+    <link href="layouts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="main">
+    <div id="header">
+        <div class="left">
+            <img src="http://bbs.its.csu.edu.cn/bbs/static/image/common//logo.png"/><span>十七周年</span></div>
+        <div class="right">
+            <div class="control">
+                <i id="ctrl-show-barcode" class="fa fa-qrcode"></i>
+                <em></em>
+                <i id="ctrl-show-info" class="fa fa-eye"></i>
+                <em></em>
+                <i id="ctrl-show-lottery" class="fa fa-inbox"></i>
+            </div>
+            <div id="tips">
+                <span>微信添加<em>中南大学云麓园BBS</em><br/>点击<em>爱上云麓</em>-&gt;<em>o(^ ^)o/</em>参与互动</span>
+                <span>发微博参与互动<br/><em>内容+@中南大学云麓园BBS</em></span>
+                <span>登录云麓园手机版参与互动<br/><em>http://bbs.csu.edu.cn/?211533</em></span>
+            </div>
+        </div>
+    </div>
+    <div id="flow">
+        <div id="ctrl-scroll-up" class="control"><i class="fa fa-angle-up"></i></div>
+        <div id="ctrl-scroll-down" class="control"><i class="fa fa-angle-down"></i></div>
+        <div class="row information" id="barcode-row">
+            <img src="layouts/qrcode.jpg"/>
+
+            <p>微信扫描二维码<br/>即刻上墙</p>
+
+            <p class="small">扫描二维码关注云麓园BBS微信平台<br/>点击“爱上云麓”-&gt;“o(^ ^)o/”</p>
+        </div>
+        <div class="row information" id="info-row">
+            <p>微信点击<em>爱上云麓</em>-&gt;<em>o(^ ^)o/</em>即刻上墙</p>
+
+            <p>发微博并<em>@中南大学云麓园BBS</em>即刻上墙</p>
+
+            <p>手机登录云麓园网页版 跟帖即上墙<br/><em>http://bbs.csu.edu.cn/?211533</em></p>
+        </div>
+        <div class="row information" id="lottery-row">
+            <div style="width: 40%;" class="lottery-col">
+                <p class="lottery-title-small">抽奖区</p>
+                <img id="lottery-avatar">
+                <br>
+                <span id="lottery-username">*就是你哟*</span>
+                <br>
+                <span class="small">参与抽奖人数：<span id="lottery-users-count"></span></span>
+                <br>
+                <span class="small">第 <span id="lottery-roll-count">0</span> 次抽奖</span>
+            </div>
+
+            <div style="width: 48%;min-height: 78%;margin-left: 5%;" class="lottery-col" id="award-list">
+                <p class="lottery-title-small">中奖名单</p>
+            </div>
+        </div>
+        <div class="row" id="templateRow">
+            <div class="avatar"><img src=""/></div>
+            <div class="content"><span class="name"></span><span class="message"></span></div>
+        </div>
+    </div>
+</div>
+<i id="locker" class="fa fa-lock"></i>
+
+<div id="cover">Loading...</div>
+<script src="js/jquery-2.1.0.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

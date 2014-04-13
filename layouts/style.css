@@ -1,0 +1,249 @@
+@charset 'utf-8';
+html {
+    height: 100%;
+    background: url('pattern.png') repeat;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat transparent;
+    background-position: center center;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Microsoft YaHei";
+    color: #FFF;
+    text-shadow: 1px 1px 1px #333;
+}
+
+#header {
+    margin-bottom: 20px;
+    height: 80px;
+    line-height: 80px;
+    color: #8C6C57;
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+#header .left {
+    float: left;
+    font-size: 42px;
+    margin-right: 12px;
+}
+
+#header .left * {
+    vertical-align: middle;
+}
+
+#header .left span {
+    padding: 0 10px;
+}
+
+#header .right {
+    font-size: 30px;
+    line-height: 40px;
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: hidden;
+    height: 100%;
+}
+
+em {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    color: #00ADEB;
+    padding: 0 10px;
+}
+
+#header::after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+#tips span {
+    display: block;
+    line-height: 40px;
+    height: 80px;
+    text-align: center;
+}
+
+#header .right .control {
+    width: 581px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 70px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.69);
+    border-radius: 20px;
+    color: #FFF;
+    display: none;
+}
+
+#header .right:hover .control {
+    display: block;
+}
+
+#header .right .control i:hover {
+    color: #B49F83;
+    cursor: pointer;
+}
+
+#main {
+    width: 1000px;
+    height: 100%;
+    margin: 10px auto 0;
+}
+
+#flow {
+    background: rgba(140, 108, 87, 0.6);
+    border: #8C6C57 solid 5px;
+    border-radius: 40px;
+    padding: 20px;
+    overflow: hidden;
+    word-break: break-all;
+    word-wrap: break-word;
+    position: relative;
+}
+
+#templateRow {
+    display: none;
+}
+
+#flow .row {
+    margin-bottom: 12px;
+    font-size: 30px;
+    font-weight: bold;
+    /*line-height: 40px;*/
+}
+
+#flow .control {
+    font-size: 60px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 120px;
+    line-height: 120px;
+    display: none;
+}
+
+#flow:hover .control {
+    display: block;
+}
+
+#flow .control:hover {
+    background-color: rgba(0, 0, 0, 0.42);
+}
+
+#ctrl-scroll-up {
+    top: 0;
+}
+
+#ctrl-scroll-down {
+    bottom: 0;
+}
+
+#flow .avatar {
+    float: left;
+    padding-right: 15px;
+}
+
+#flow .avatar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+}
+
+#flow .row.information {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 50px;
+    text-align: center;
+    display: none;
+}
+
+#flow .row.information .small {
+    font-size: 30px;
+}
+
+#flow .row::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#flow .row .name::after {
+    content: '：';
+}
+
+#barcode-row img{
+    float: left;
+}
+
+#cover {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    top: 0;
+    left: 0;
+}
+
+#locker {
+    color: #8C6C57;
+    font-size: 60px;
+    position: fixed;
+    z-index: 6;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#lottery-avatar {
+    border-radius: 90px;
+    width: 180px;
+    height: 180px;
+    float: none !important;
+}
+
+.lottery-title-small {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.lottery-col {
+    float: left;
+}
+
+#connt {
+    color: red;
+}
+
+#lottery-username {
+    font-size: 30px;
+}
+
+.award-user img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    margin-right: 20px;
+}
+
+.award-user{
+    height: 120px;
+    width: 100%;
+    line-height: 120px;
+    overflow: hidden;
+}
